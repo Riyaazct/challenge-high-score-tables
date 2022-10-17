@@ -1,5 +1,6 @@
 import HighScoreTable from "./HighScoreTable";
 import allCountryScores from "./scores";
+import { useState } from "react";
 
 allCountryScores.sort((a, b) => {
   let textA = a.name.toLowerCase();

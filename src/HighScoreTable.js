@@ -1,7 +1,6 @@
 import React from "react";
 
 let HighScoreTable = (props) => {
-  // console.log(props.data.scores);
   props.data.scores.sort((a, b) =>
     a.s <= b.s ? 1 : a.s >= b.s ? -1 : 0
   );
