@@ -11,12 +11,10 @@ import allCountryScores from "./scores";
 let HighScoreTable = () => {
   const [data, setdata] = useState(allCountryScores);
   const [order, setorder] = useState("ASC");
-  const [row, setrow] = useState();
 
-  let [{ name, scores }] = data;
+  let [{ scores }] = data;
 
   const sorting = (col) => {
-    console.log(col);
     if (order === "ASC") {
       const sorted = [...data].sort((a, b) =>
         a[col] > b[col] ? 1 : -1
