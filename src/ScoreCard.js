@@ -1,6 +1,6 @@
 import HighScoreTable from "./HighScoreTable";
 import allCountryScores from "./scores";
-import { useState } from "react";
+// import { useState } from "react";
 
 allCountryScores.sort((a, b) => {
   let textA = a.name.toLowerCase();
@@ -9,7 +9,7 @@ allCountryScores.sort((a, b) => {
 });
 
 const scores = allCountryScores.map((score, i) => {
-  return <HighScoreTable key={i} data={allCountryScores[i]} />;
+  return <HighScoreTable key={i} />;
 });
 
 const ScoreCard = () => scores;
